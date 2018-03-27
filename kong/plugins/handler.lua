@@ -1,20 +1,12 @@
 local BasePlugin = require "kong.plugins.base_plugin"
-
-local access = require "kong.plugins.helloworld.access"
-
-
-
+local access = require "kong.plugins.cachemetric.access"
 local HelloWorldHandler = BasePlugin:extend()
-
-
 
 function HelloWorldHandler:new()
 
   HelloWorldHandler.super.new(self, "helloworld")
 
 end
-
-
 
 function HelloWorldHandler:access(conf)
 
@@ -23,7 +15,5 @@ function HelloWorldHandler:access(conf)
   access.execute(conf)
 
 end
-
-
 
 return HelloWorldHandler
