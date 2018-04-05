@@ -8,3 +8,6 @@ Then you need to change kong.conf by adding:
 `custom_plugins = cachemetric` then `kong reload`
 After this you should add the plugin to your API
 
+# docker-compose kong
+(consul + kong + postgres)
+https://github.com/Kong/docker-kong/tree/master/compose
