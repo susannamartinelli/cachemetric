@@ -10,4 +10,5 @@ After this you should add the plugin to your API
 
 # docker-compose kong
 (consul + kong + postgres)
+
 https://github.com/Kong/docker-kong/tree/master/compose
